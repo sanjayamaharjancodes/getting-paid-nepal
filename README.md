@@ -78,7 +78,7 @@ edit the `.html` files directly.
 - No JS blocking render; no web fonts; fast by default.
 
 Not included (intentionally, to avoid scope creep beyond the spec): JSON-LD
-schema markup, analytics/tracking script, custom domain. Add analytics only
+schema markup, analytics/tracking script. Add analytics only
 with a privacy-respecting tool and update `privacy-policy.html` accordingly
 if you do.
 
@@ -89,4 +89,11 @@ Hosted on GitHub Pages, served from the repo root of the `main` branch
 add a `.nojekyll` file if Pages ever mis-serves an underscore-prefixed
 path; not currently needed since no filenames start with `_`).
 
-Live URL: https://sanjayamaharjancodes.github.io/getting-paid-nepal/
+Custom domain: `gettingpaid.scaleturn.com` (via a `CNAME` file at the repo
+root + DNS `CNAME` record pointing at `sanjayamaharjancodes.github.io`,
+configured through the GitHub Pages settings API). Because a custom domain
+serves from the domain root rather than a `/getting-paid-nepal/` subpath,
+every internal link/asset reference must stay relative (no leading `/`) —
+already true of this build, verified after migration.
+
+Live URL: https://gettingpaid.scaleturn.com/

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sanjayamaharjancodes.github.io/getting-paid-nepal/sitemap.xml
+Sitemap: https://gettingpaid.scaleturn.com/sitemap.xml
