@@ -30,6 +30,20 @@ international clients. Track-2 owned asset for MyAgentOrganization.
   grep -rl "\[PAYONEER-AFFILIATE-LINK\]" *.html
   ```
   Find-and-replace that exact string across all matching files.
+- **Premium product checkout link is also a placeholder.** `premium.html`'s
+  "Buy the PDF — $9" button uses the literal placeholder
+  `[PADDLE-CHECKOUT-LINK]` as its `href`. Replace it with the real Paddle
+  checkout URL once the `$9` "Getting Paid in Nepal — Complete PDF Edition"
+  product/price is live in the Paddle catalog (must match the $9 shown on the
+  page). `grep -rl "\[PADDLE-CHECKOUT-LINK\]" *.html` to find it.
+- **v1.1 (this patch):** contact email is now live
+  (`sanjayamaharjan.codes@gmail.com`, Sanjay-approved), and three pages were
+  added: `refund-policy.html` (14-day no-questions-asked refund on the paid
+  PDF, processed via Paddle) and `premium.html` (the $9 PDF product page).
+  The actual PDF product — source HTML + rendered PDF — is **not** in this
+  repo. It lives at `D:/Lab/assets/getting-paid-nepal-premium/` in its own
+  git repo with **no public remote**, so the paid deliverable isn't sitting
+  in a public GitHub repo next to the free site.
 - **No Wise page/link.** The original spec included a Wise guide, but Wise
   does not currently support Nepal-resident receiving accounts, so a
   dedicated Wise guide (and any Wise affiliate link) would be inaccurate.

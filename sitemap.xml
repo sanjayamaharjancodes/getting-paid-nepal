@@ -31,6 +31,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://sanjayamaharjancodes.github.io/getting-paid-nepal/premium.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://sanjayamaharjancodes.github.io/getting-paid-nepal/about.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
@@ -47,6 +52,11 @@
   </url>
   <url>
     <loc>https://sanjayamaharjancodes.github.io/getting-paid-nepal/privacy-policy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://sanjayamaharjancodes.github.io/getting-paid-nepal/refund-policy.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
