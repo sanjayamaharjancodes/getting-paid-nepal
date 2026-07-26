@@ -62,8 +62,8 @@
     <p>It's not new regulatory information beyond what's on the site, and it's not personalized advice. The same disclaimers that apply to the website apply to the PDF: general information only, not legal, tax, banking, or financial advice — see the site's <a href="terms.html">Terms</a>.</p>
 
     <h2>Buy it</h2>
-    <p><a class="btn" href="[PADDLE-CHECKOUT-LINK]">Buy the PDF — $9</a></p>
-    <p style="font-size:0.85rem;color:var(--color-text-muted)">Checkout opens in Paddle. Paddle is our payment provider and handles your payment details — we never see or store your card information.</p>
+    <p><a class="btn" href="#" id="paddle-buy">Buy the PDF — $9</a></p>
+    <p style="font-size:0.85rem;color:var(--color-text-muted)">Checkout opens in Paddle. Paddle is our payment provider and handles your payment details — we never see or store your card information. After payment, the PDF is emailed to the address you use at checkout.</p>
 
     <div class="note-box">
       <strong>Refunds:</strong> If it's not useful to you, you can request a full refund within 14 days, no questions asked. See the <a href="refund-policy.html">Refund Policy</a> for how.
@@ -94,5 +94,16 @@
   </div>
 </footer>
 <script data-goatcounter="https://scaleturn.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script>
+Paddle.Initialize({ token: "live_0d520d97ce563101fee43ef1e38" });
+document.getElementById("paddle-buy").addEventListener("click", function (e) {
+  e.preventDefault();
+  Paddle.Checkout.open({
+    items: [{ priceId: "pri_01kyaggap173h7ka19b12eskxz", quantity: 1 }],
+    settings: { successUrl: "https://gettingpaid.scaleturn.com/purchase-complete.html" }
+  });
+});
+</script>
 </body>
 </html>
