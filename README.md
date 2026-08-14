@@ -21,21 +21,16 @@ international clients. Track-2 owned asset for MyAgentOrganization.
   files. This is the accepted tradeoff for a zero-build static site; if the
   page count grows much further, consider a static-site generator (11ty,
   Hugo) as a v2 migration, not now.
-- **Affiliate links are placeholders.** Every Payoneer call-to-action uses the
-  literal placeholder `[PAYONEER-AFFILIATE-LINK]` as its `href`. **These are
-  not live links.** Before this site is promoted/monetized, replace every
-  occurrence with the real Payoneer referral URL once Sanjay's Payoneer
-  affiliate/referral program approval is in hand:
-  ```
-  grep -rl "\[PAYONEER-AFFILIATE-LINK\]" *.html
-  ```
-  Find-and-replace that exact string across all matching files.
-- **Premium product checkout link is also a placeholder.** `premium.html`'s
-  "Buy the PDF — $9" button uses the literal placeholder
-  `[PADDLE-CHECKOUT-LINK]` as its `href`. Replace it with the real Paddle
-  checkout URL once the `$9` "Getting Paid in Nepal — Complete PDF Edition"
-  product/price is live in the Paddle catalog (must match the $9 shown on the
-  page). `grep -rl "\[PADDLE-CHECKOUT-LINK\]" *.html` to find it.
+- **No active affiliate links.** The Payoneer call-to-action is a plain link
+  to Payoneer's official freelancer page and earns the site nothing. Current
+  Refer Your Network terms require an eligible referrer to have received at
+  least USD 1,000 through Payoneer before a unique link is issued; do not add
+  a referral claim until a real account-issued link exists and its current
+  terms have been verified.
+- **Premium product sales are paused.** The Paddle catalog product still
+  exists, but `premium.html` has no checkout control because the prior email
+  delivery flow depended on Sanjay. Re-enable sales only with instant,
+  autonomous delivery and an end-to-end purchase test.
 - **v1.1 (this patch):** contact email is now live
   (`sanjayamaharjan.codes@gmail.com`, Sanjay-approved), and three pages were
   added: `refund-policy.html` (14-day no-questions-asked refund on the paid
