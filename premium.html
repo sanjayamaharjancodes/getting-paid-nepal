@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Getting Paid in Nepal — Complete PDF Edition | Getting Paid Nepal</title>
-<meta name="description" content="A consolidated, print-optimized, offline PDF of the full Getting Paid in Nepal guide, plus two bonus checklists. Sales are paused while instant delivery is being automated.">
+<meta name="description" content="A consolidated, print-optimized, offline PDF of the full Getting Paid in Nepal guide, plus two bonus checklists. Instant download after checkout.">
 <link rel="canonical" href="https://gettingpaid.scaleturn.com/premium.html">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -61,9 +61,10 @@
     <h2>What this is not</h2>
     <p>It's not new regulatory information beyond what's on the site, and it's not personalized advice. The same disclaimers that apply to the website apply to the PDF: general information only, not legal, tax, banking, or financial advice — see the site's <a href="terms.html">Terms</a>.</p>
 
-    <h2>Availability</h2>
+    <h2>Get the PDF</h2>
     <div class="note-box">
-      <strong>Sales are temporarily paused.</strong> We are replacing email-based delivery with instant, automatic delivery before accepting new purchases. The complete website remains free to use in the meantime.
+      <p><strong>Instant download.</strong> Checkout is handled by Paddle; the moment payment completes you land on your download page. Card and PayPal accepted.</p>
+      <p><a class="btn" href="#" id="buy-pdf-btn">Buy the PDF — instant download</a></p>
     </div>
 
     <div class="note-box">
@@ -76,6 +77,18 @@
 
   </div>
 </main>
+
+<script src="https://cdn.paddle.com/paddle/v2/paddle.js"></script>
+<script>
+  Paddle.Initialize({ token: "live_0d520d97ce563101fee43ef1e38" });
+  document.getElementById("buy-pdf-btn").addEventListener("click", function (e) {
+    e.preventDefault();
+    Paddle.Checkout.open({
+      items: [{ priceId: "pri_01kyaggap173h7ka19b12eskxz", quantity: 1 }],
+      settings: { successUrl: "https://gettingpaid.scaleturn.com/dl/PBZSs0JF6ap0/" }
+    });
+  });
+</script>
 
 <footer class="site-footer">
   <div class="container">
