@@ -2,7 +2,7 @@
 
 Static, framework-free affiliate/informational site for Nepali freelancers and
 IT exporters on how to legally receive USD from Upwork, Fiverr, and direct
-international clients. Track-2 owned asset for MyAgentOrganization.
+international clients. Track-2 owned asset for mandala.
 
 ## How it works
 
