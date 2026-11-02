@@ -36,7 +36,7 @@ international clients. Track-2 owned asset for mandala.
   added: `refund-policy.html` (14-day no-questions-asked refund on the paid
   PDF, processed via Paddle) and `premium.html` (the $9 PDF product page).
   The actual PDF product — source HTML + rendered PDF — is **not** in this
-  repo. It lives at `D:/Lab/assets/getting-paid-nepal-premium/` in its own
+  repo. It lives at `F:/Lab/assets/getting-paid-nepal-premium/` in its own
   git repo with **no public remote**, so the paid deliverable isn't sitting
   in a public GitHub repo next to the free site.
 - **No Wise page/link.** The original spec included a Wise guide, but Wise
