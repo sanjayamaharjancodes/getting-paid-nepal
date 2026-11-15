@@ -27,10 +27,9 @@ international clients. Track-2 owned asset for mandala.
   least USD 1,000 through Payoneer before a unique link is issued; do not add
   a referral claim until a real account-issued link exists and its current
   terms have been verified.
-- **Premium product sales are paused.** The Paddle catalog product still
-  exists, but `premium.html` has no checkout control because the prior email
-  delivery flow depended on Sanjay. Re-enable sales only with instant,
-  autonomous delivery and an end-to-end purchase test.
+- **Premium product sales are live (since `d405a0b`, 2026-08-29).** `premium.html`
+  opens a Paddle checkout at USD 9.00 with instant delivery. The home page said
+  "sales are paused" until md-004 (2026-11-15) corrected it.
 - **v1.1 (this patch):** contact email is now live
   (`sanjayamaharjan.codes@gmail.com`, Sanjay-approved), and three pages were
   added: `refund-policy.html` (14-day no-questions-asked refund on the paid
