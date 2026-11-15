@@ -15,7 +15,7 @@ This README lives in `.github/` so the Pages build does not publish it; GitHub s
 - **Shared header and footer are copied by hand** into every page. Edit all pages when either changes.
 - **No active affiliate links.** The Payoneer call-to-action is a plain link. Do not add a referral claim until a real
   referral link exists and its terms have been checked.
-- **Nothing for sale.** A paid PDF edition was sold here from August to November 2026 and retired after it made no
+- **Nothing for sale.** A paid PDF edition was offered here until November 2026 and retired after it made no
   sales. Its checkout, download and refund pages were removed; the guide is free.
 - **No Wise guide.** Wise does not offer Nepal-resident receiving accounts, so it appears only as "not usable for
   receiving". Re-check before changing that.
