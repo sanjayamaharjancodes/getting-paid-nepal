@@ -8,8 +8,13 @@ This README lives in `.github/` so the Pages build does not publish it; GitHub s
 
 ## How it works
 
-- **Plain static HTML and one CSS file.** No build step, no framework, no JavaScript dependency apart from the
-  GoatCounter page counter. All links and assets use relative paths.
+- **Plain static HTML and one CSS file.** No build step, no framework. The only scripts are the GoatCounter page
+  counter and Google's AdSense code. All links and assets use relative paths.
+- **AdSense code on every page** (since 19 Nov 2026, task ct-004). Each page's `<head>` loads Google's AdSense
+  auto-ads loader, byte for byte as on scaleturn.com (`adsbygoogle.js?client=ca-pub-5554189148912369`, async, just
+  before `style.css`); copy it into any new page. Google places any ads itself once it approves the site.
+  `privacy-policy.html` makes Google's advertising disclosures, and the `ads.txt` at scaleturn.com covers this
+  subdomain.
 - **`style.css`** holds design tokens at the top, then components (header, banner, disclaimer/note boxes, cards,
   table, footer), then one mobile breakpoint.
 - **Shared header and footer are copied by hand** into every page. Edit all pages when either changes.
